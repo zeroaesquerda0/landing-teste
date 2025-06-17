@@ -14,7 +14,6 @@ class NikeWebsite {
 
   init() {
     this.setupSmoothScroll();
-    this.setupCustomCursor();
     this.setupNavigation();
     this.setupLoadingScreen();
     this.setupHeroAnimations();
@@ -54,59 +53,6 @@ class NikeWebsite {
     });
 
     gsap.ticker.lagSmoothing(0);
-  }
-
-  setupCustomCursor() {
-    const cursor = document.querySelector('.cursor');
-    const cursorInner = document.querySelector('.cursor-inner');
-    
-    if (!cursor) return;
-
-    let mouseX = 0;
-    let mouseY = 0;
-    let cursorX = 0;
-    let cursorY = 0;
-
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    const animateCursor = () => {
-      const dx = mouseX - cursorX;
-      const dy = mouseY - cursorY;
-      
-      cursorX += dx * 0.1;
-      cursorY += dy * 0.1;
-      
-      cursor.style.transform = `translate(${cursorX - 10}px, ${cursorY - 10}px)`;
-      
-      requestAnimationFrame(animateCursor);
-    };
-
-    animateCursor();
-
-    // Hover effects
-    const hoverElements = document.querySelectorAll('a, button, .product-card, .collection-item');
-    
-    hoverElements.forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursor.classList.add('hover');
-      });
-      
-      el.addEventListener('mouseleave', () => {
-        cursor.classList.remove('hover');
-      });
-    });
-
-    // Click effect
-    document.addEventListener('mousedown', () => {
-      cursor.classList.add('click');
-    });
-
-    document.addEventListener('mouseup', () => {
-      cursor.classList.remove('click');
-    });
   }
 
   setupNavigation() {

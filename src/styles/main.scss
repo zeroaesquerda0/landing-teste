@@ -42,7 +42,6 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   overflow-x: hidden;
-  cursor: none;
   
   &.menu-open {
     overflow: hidden;
@@ -60,40 +59,6 @@ body {
   
   @media (max-width: 768px) {
     padding: 0 20px;
-  }
-}
-
-// Custom Cursor
-.cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background: var(--accent-color);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  transition: transform 0.1s ease;
-  
-  .cursor-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 8px;
-    height: 8px;
-    background: var(--secondary-color);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  &.hover {
-    transform: scale(2);
-  }
-  
-  &.click {
-    transform: scale(0.8);
   }
 }
 
@@ -1379,13 +1344,8 @@ body {
 @media print {
   .navbar,
   .hero-scroll,
-  .mobile-menu,
-  .cursor {
+  .mobile-menu {
     display: none !important;
-  }
-  
-  body {
-    cursor: auto !important;
   }
   
   * {
