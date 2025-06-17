@@ -3,12 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Nike</title>
+    <title>Nike - Just Do It</title>
     <link rel="stylesheet" href="/src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div>
-        <h1>olá</h1>
-    </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="https://static.nike.com.br/v11-105-0/images/brands/logo.svg" alt="Nike Logo" class="logo">
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#lancamentos">Lançamentos</a></li>
+                    <li><a href="#colecoes">Coleções</a></li>
+                    <li><a href="#masculino">Masculino</a></li>
+                    <li><a href="#feminino">Feminino</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#sobre">Sobre a Nike</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="https://imgnike-a.akamaihd.net/branding/home-sbf/touts/tout-vaporfly-4-2025-desk.jpg" alt="Nike Air Max">
+            </div>
+            <div class="hero-overlay">
+                <div class="hero-text">
+                    <h1>Revolução em Movimento</h1>
+                    <p>Descubra a nova coleção Air Max com tecnologia inovadora para máximo desempenho</p>
+                    <button class="cta-button">Explore a Coleção</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coleções em Destaque -->
+    <section class="featured-collections" id="colecoes">
+        <div class="container">
+            <h2 class="section-title">Coleções em Destaque</h2>
+            <div class="collections-grid">
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://imgnike-a.akamaihd.net/branding/home-sbf/touts/icone-air-force-1.png" alt="Air Max Collection">
+                        <div class="collection-overlay">
+                            <h3>Air Max</h3>
+                            <p>Tecnologia de amortecimento revolucionária</p>
+                            <button class="collection-btn">Ver Coleção</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://imgnike-a.akamaihd.net/branding/home-sbf/touts/icone-air-jordan.png" alt="Jordan Collection">
+                        <div class="collection-overlay">
+                            <h3>Jordan</h3>
+                            <p>Legado e performance em cada passo</p>
+                            <button class="collection-btn">Ver Coleção</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://imgnike-a.akamaihd.net/branding/home-sbf/touts/icone-air-max.png" alt="Dri-FIT Collection">
+                        <div class="collection-overlay">
+                            <h3>Dri-FIT</h3>
+                            <p>Mantenha-se seco e confortável</p>
+                            <button class="collection-btn">Ver Coleção</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://imgnike-a.akamaihd.net/250x250/058436P1.jpg" alt="Running Collection">
+                        <div class="collection-overlay">
+                            <h3>Running</h3>
+                            <p>Feito para quebrar limites</p>
+                            <button class="collection-btn">Ver Coleção</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner de Inspiração -->
+    <section class="inspiration-banner">
+        <div class="banner-content">
+            <div class="banner-image">
+                <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800" alt="Atleta Nike">
+            </div>
+            <div class="banner-overlay">
+                <div class="banner-text">
+                    <h2>Just Do It</h2>
+                    <p>Não importa o seu nível, não importa o seu objetivo. Se você tem um corpo, você é um atleta.</p>
+                    <button class="cta-button secondary">Encontre Sua Motivação</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios da Marca -->
+    <section class="brand-benefits">
+        <div class="container">
+            <h2 class="section-title">Por que Escolher Nike</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Tecnologia Air</h3>
+                    <p>Amortecimento revolucionário que proporciona conforto e performance superiores em cada movimento.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Feito para Movimento</h3>
+                    <p>Design ergonômico e materiais de alta qualidade para acompanhar seu ritmo em qualquer atividade.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Compromisso com o futuro através de materiais reciclados e processos de produção responsáveis.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Performance Elite</h3>
+                    <p>Desenvolvido com atletas profissionais para entregar o máximo desempenho em cada desafio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Mantenha-se Conectado</h2>
+                <p>Seja o primeiro a saber sobre lançamentos, ofertas exclusivas e novidades Nike.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="https://static.nike.com.br/v11-105-0/images/brands/logo.svg" alt="Nike Logo" class="footer-logo">
+                    <p>Just Do It</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#">Tênis</a></li>
+                        <li><a href="#">Roupas</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Equipamentos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Guia de Tamanhos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre a Nike</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Sustentabilidade</a></li>
+                        <li><a href="#">Investidores</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024-2025 PrimeCode Solutions, Inc. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/src/imgs/js/script.js"></script>
 </body>
 </html>
